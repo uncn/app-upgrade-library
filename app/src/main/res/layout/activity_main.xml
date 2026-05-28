@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APP 升级库示例"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="准备就绪"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:progress="0"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="开始下载更新"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="取消下载"
+        android:textSize="16sp"
+        android:backgroundTint="#FF9800" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能说明：\n• 点击\"开始下载\"会从 URL 下载 APK\n• 下载进度实时显示在通知栏\n• 下载完成后显示安装通知\n• 点击安装通知自动启动安装"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginTop="32dp"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
